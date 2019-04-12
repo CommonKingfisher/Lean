@@ -55,6 +55,7 @@
     <Content Include="Alphas\VIXDualThrustAlpha.py" />
     <Content Include="BasicSetAccountCurrencyAlgorithm.py" />
     <None Include="CapmAlphaRankingFrameworkAlgorithm.py" />
+    <None Include="SmaCrossUniverseSelectionAlgorithm.py" />
     <Content Include="G10CurrencySelectionModelFrameworkAlgorithm.py" />
     <Content Include="ExpiryHelperAlphaModelFrameworkAlgorithm.py" />
     <Content Include="BasicTemplateFuturesFrameworkAlgorithm.py" />
