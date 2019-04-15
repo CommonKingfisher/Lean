@@ -49,11 +49,6 @@ namespace QuantConnect.Data.UniverseSelection
         public TimeSpan MinimumTimeInUniverse;
 
         /// <summary>
-        /// Defines the data normalization mode used for the universe
-        /// </summary>
-        public DataNormalizationMode DataNormalizationMode;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="UniverseSettings"/> class
         /// </summary>
         /// <param name="resolution">The resolution</param>
@@ -61,15 +56,13 @@ namespace QuantConnect.Data.UniverseSelection
         /// <param name="fillForward">True to fill data forward, false otherwise</param>
         /// <param name="extendedMarketHours">True to allow exended market hours data, false otherwise</param>
         /// <param name="minimumTimeInUniverse">Defines the minimum amount of time a security must remain in the universe before being removed</param>
-        /// <param name="dataNormalizationMode">Defines the how the data is normalized</param>
-        public UniverseSettings(Resolution resolution, decimal leverage, bool fillForward, bool extendedMarketHours, TimeSpan minimumTimeInUniverse, DataNormalizationMode dataNormalizationMode = DataNormalizationMode.Adjusted)
+        public UniverseSettings(Resolution resolution, decimal leverage, bool fillForward, bool extendedMarketHours, TimeSpan minimumTimeInUniverse)
         {
             Resolution = resolution;
             Leverage = leverage;
             FillForward = fillForward;
             ExtendedMarketHours = extendedMarketHours;
             MinimumTimeInUniverse = minimumTimeInUniverse;
-            DataNormalizationMode = dataNormalizationMode;
         }
     }
 }
